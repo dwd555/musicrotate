@@ -11,16 +11,19 @@
         	music=document.getElementById(settings.audioId);
         }else{
         	music=this.children('audio')[0]||this.children('video')[0];
-        }      
+        }
+        if(!img.hasClass('rotateOn')){
+        	img.addClass('rotateOn');
+        }   
         this.click(function(){
         	if(music.paused){
-	        img.addClass('on');
+	        img.addClass('rotateOn');
 	        if(settings.imgoffSrc!=='null'){
 	        	img[0].src=settings.imgonSrc;
 	    	}
 	        music.play();
 	    }else{
-	        img.removeClass('on');
+	        img.removeClass('rotateOn');
 	        if(settings.imgoffSrc!=='null'){
 	        	img[0].src=settings.imgoffSrc;
 	    	}
