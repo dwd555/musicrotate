@@ -1,0 +1,11 @@
+{
+  "name": "musicrotate",
+  "version": "1.0.0",
+  "description": "jqplugin",
+  "main": "musicBtn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua",
+  "license": "ISC"
+}
